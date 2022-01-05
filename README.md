@@ -119,3 +119,55 @@ IAM controla QUEM pode fazer o O QUE na sua conta AWS
         * Não possui credencias
         * Chaves de Acesso são criadas dinamicamente
         * Usuários, aplicações e serviços podem assumir IAM Roles
+
+### Serviços de Armazenamento da AWS
+Tipos de armazenamentos:
+- Objetos:
+  As operações devem ser feitas no objeto como um tudo. Ex: delete, upload.
+- Em Blocos:
+  As operações podem ser feitas em apenas blocos de objeto (partes).
+  
+Principais Serviços:
+- S3 (objetos)
+- Glacier (blocos)
+- EBS (blocos)
+- EFS (Arquivos ou blocos)
+- Storage Gateway (Híbrido)
+- Snowball (Usado para transferência para AWS - Caixa)
+- Snowball Edge (Usado para processamento serviços EC2)
+- Snowmobile (Transferência para AWS - Caminhão container)
+
+
+#### AWS Simple Storage Service S3
+Serviço de armazenamento de objetos que permite armazenar e recuperar qualquer quantidade de informações via internet, pagando apenas pelo o que usar.
+
+Informações importantes:
+
+            Provê interface WEB (Console)
+            Permite acesso via CLI
+            Possui 99.9999999% de Durabilidade
+            Possui 99.99% de Disponibilidade
+            Permite objetos de até 5TB de tamanho
+
+Conceitos importantes:
+- Objetos no S3 são armazenados em Buckets;
+- Nomde dos Objetos são chamados de Object Key;
+- Versões dos Objetos são chamados de Version ID;
+- Endereço dos Objetos são chamados de Link Address.
+
+Definições para objetos e buckets:
+- Classe de Armazenamento (storage class)
+    - Frequência de acesso
+    - Tempo de recuperação
+    - Preço
+- Política de Acesso (Policy)
+- Versionamento
+- Criptografia
+- Ciclo de Vida (Lifecycle)
+    - Permite que ações de gerenciamento de ciclo de vida de objetos possa ser criada à partir de regras
+
+
+#### AWS Elastic Block Store - EBS
+Tipo de armazenamento em blocos, persistente e customizável para instâncias EC2.
+- Permite habilitar encriptação(Encryption on Rest)
+- Podem ser criadas várias cópias de volume (snapshots)
