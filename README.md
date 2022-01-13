@@ -171,3 +171,35 @@ Definições para objetos e buckets:
 Tipo de armazenamento em blocos, persistente e customizável para instâncias EC2.
 - Permite habilitar encriptação(Encryption on Rest)
 - Podem ser criadas várias cópias de volume (snapshots)
+
+
+### Alguns Serviços de Computação na AWS
+- EC2
+    - Comutador (Máquina virtual)
+- ECS
+    - Gestão de Containers
+- Lambda
+    - Serverless
+    - FaaS - Function as a Service
+    - Cobrado por execução
+- Elastic Beanstalk
+    - Deploy de aplicações na Web
+    - PaaS - Plataformas como Serviço
+    - Integração com Git e IDEs
+
+### EC2 - Elastic Compute Cloud
+É um serviço que disponibiliza capacidade computacional segura e redimensionável na nuvem.
+
+Modalidades de contratação:
+- On Demand
+    - Sob Demanda
+    - Pay as you Go
+- Reservada
+    - Reservada por 1 ou 3 anos
+    - Descontos
+- Spot
+    - Leilão
+    - define um preço a pagar pela capacidade ociosa da AWS
+- Dedicado
+    - Servidor Dedicado
+    - Preço por hora
